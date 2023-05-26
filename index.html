@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="rpss.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+</head>
+<body>
+    <div class="a">
+        <div class="circle"></div>
+    </div>
+
+    <!--Homepage-->
+    <div id="homepage">
+        <div id="title">
+            <h1>Rock</h1>
+            <h1>Paper</h1>
+            <h1>Scissors</h1>
+        </div>
+        <div id="startgame">
+            <button id="sgame">Start Game</button>
+        </div>
+    </div>
+
+    <!--Select player1-->
+    <div id="player1">
+        <div id="header">
+            <h1>Choose your player</h1>
+        </div>
+        <div id="images">
+            <div id="img1"><img class="" src="chiru.jpg" id="chiru"></div>
+            <div id="img2"><img class="" src="alluarjun.jpg" id="alluarjun"></div>
+            <div id="img3"><img class="" src="balakrishna.jpg" id="balakrishna"></div>
+            <div id="img4"><img class="" src="nagarjuna.jpg" id="nagarjuna"></div>
+        </div>
+        <div id="next1">
+            <i id="nextpage1" class="fa-sharp fa-solid fa-arrow-right" style="color: #ffffff;"></i>
+        </div>
+    </div>
+
+    <!--Select player2-->
+    <div id="player2">
+        <div id="header">
+            <h1>Choose your Opponent</h1>
+        </div>
+        <div id="images">
+            <div id="img5"><img class="" src="nani.jpg" id="nani"></div>
+            <div id="img6"><img class="" src="ntr.jpg" id="ntr"></div>
+            <div id="img7"><img class="" src="pawankalyan.jpg" id="pawankalyan"></div>
+            <div id="img8"><img class="" src="venkatesh.jpg" id="venkatesh"></div>
+        </div>
+        <div id="next1">
+            <i id="nextpage2" class="fa-sharp fa-solid fa-arrow-right" style="color: #585123;"></i>
+        </div>
+    </div>
+
+    <!--players description-->
+    <div id="description">
+        <div id="wplaying">
+            <div id="ply1">
+                <img src="nani.jpg" id="fplayer1">
+            </div>
+            <div id="msg">
+                <p>Vs</p>
+            </div>
+            <div id="ply2">
+                <img src="nagarjuna.jpg" id="fplayer2">
+            </div>
+        </div>
+        <div id="buttons">
+            <button id="change">Change Opponent</button> <br>
+            <button id="game">Start Game</button>
+        </div>
+    </div>
+
+    <!--gamescreen-->
+    <div id="gamescreen">
+        <div id="opponent">
+            <div id="opponentscore">
+                <p><span id="opponentname">Opponent name</span> <span id="opponenetscore">0</span></p>
+            </div>
+            <div id="opponentemoji">
+                <p id="oppemo">&#9994;&#127995;</p>
+            </div>
+        </div>
+        <div id="yours">
+            <div id="youremoji">
+                <p id="youremo">&#9994;&#127995;</p>
+            </div>
+            <div id="yourscore">
+                <p><span id="yourname">your name</span> <span id="yourgamescore">0</span></p>
+            </div>
+        </div>
+        <div id="choices">
+            <div id="options">
+                <div id="opt1"><p id="rock">&#129704;</p></div>
+                <div id="opt2"><p id="pap">&#128220;</p></div>
+                <div id="opt3"><p id="scis">&#9986;</p></div>
+            </div>
+            <div id="para">
+                <p>Select your weapon</p>
+            </div>
+        </div>
+    </div>
+
+    <!--final page-->
+    <div id="resultpage">
+        <div id="disp">
+            <div id="winnerimg">
+                <img src="ntr.jpg" id="wins">
+            </div>
+            <div id="winmessage">
+                <p id="outcome"><span id="winnername">opponent name</span> wins the game</p>
+            </div>
+        </div>
+        <div id="resbuttons">
+            <button id="restart">Restart</button>
+            <button id="endgame">End Game</button>
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
